@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --black: #141010;
+  --deep_black: #050203;
+  --off_white: #FCF6F5;
+  --cherry_red: #990011;
+  --rose: #f70776;
+  --maroon_flush: #c3195d;
+  --mulberry_wood: #680747;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.dot {
+  background-color: var(--off_white);
+  opacity: 1;
+  background-image: radial-gradient(#f70776 0.5px, transparent 0.5px), radial-gradient(#f70776 0.5px, var(--off_white) 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 64px;
+  z-index: 2;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  font-family: "Merriweather", serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--off_white);
+}
+
+.header {
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer {
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.work-sans-regular {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.work-sans-bold {
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media screen and (max-width: 700px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: var(--off_white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+

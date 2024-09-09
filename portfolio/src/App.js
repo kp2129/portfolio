@@ -28,7 +28,7 @@ function App() {
         </nav>
       </header>
       <main className="main-content">
-        {/* Your main content here */}
+
       </main>
     </div>
   );

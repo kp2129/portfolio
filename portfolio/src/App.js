@@ -3,7 +3,6 @@ import images from './Images';
 import { IconMail } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
 import { IconBrandGithub } from '@tabler/icons-react';
-import { IconFile } from '@tabler/icons-react';
 
 function App() {
   return (
@@ -18,9 +17,6 @@ function App() {
           </a>
           <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/" target="_blank" rel="noopener noreferrer">
             <IconBrandLinkedin />
-          </a>
-          <a href={require('./files/Kristaps_Polis_CV')} download="Kristaps_Polis_CV.pdf">
-            <IconFile />
           </a>
         </div>
 
@@ -188,12 +184,7 @@ function App() {
             <IconBrandLinkedin />
             <p> <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/"> Kristaps Polis</a></p>
           </div>
-          <div className='my-info'>
-            <IconFile />
-            <p> <a href={require('./files/Kristaps_Polis_CV')} download="Kristaps_Polis_CV.pdf">
-              Download CV
-            </a></p>
-          </div>
+          
 
         </section>
       </main>

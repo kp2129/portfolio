@@ -25,9 +25,10 @@ function App() {
           <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/" target="_blank" rel="noopener noreferrer">
             <IconBrandLinkedin />
           </a>
-          <button className="contacts-button" onClick={scrollToContacts}>Contact</button>
 
         </div>
+        <button className="scroll-button" onClick={scrollToAbout}><IconCaretDown />
+        </button>
 
         <div>
 

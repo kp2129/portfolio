@@ -192,9 +192,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="App-footer">
-        <p>KP2129</p>
-      </footer>
+      
     </div>
   );
 }

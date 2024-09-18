@@ -1,4 +1,3 @@
-/* Global Styles */
 html,
 body,
 #root {
@@ -9,7 +8,6 @@ body,
   font-family: Arial, sans-serif;
 }
 
-/* App Styles */
 .App {
   text-align: center;
   height: 100%;
@@ -17,17 +15,45 @@ body,
   /* scroll-snap-type: y proximity; */
 }
 
-/* Header Styles */
 .App-header {
   background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: white;
   scroll-snap-align: start;
   height: 100dvh;
 }
+
+.social-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contacts-button {
+  padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+  border-radius: 1rem;
+  background-color: inherit;
+  color: white;
+  border: 2px solid gray;
+  cursor: pointer;
+}
+
+.scroll-button {
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
 
 .App-header h1 {
   font-size: 4rem;
@@ -38,19 +64,16 @@ body,
   height: auto;
 }
 
-/* Main Section */
 .App-main {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* Section Styles */
-section {
-  padding: 5rem;
+.About-section {
+  padding: 2rem;
 }
 
-/* About Section */
 .About-section {
   background-color: #262626;
 }
@@ -77,14 +100,16 @@ section {
   width: min(30rem, 100%);
 }
 
-/* Media Queries for About Section */
 @media only screen and (max-width: 400px) {
   .about-container {
     justify-content: center;
   }
+
+  .project-card {
+    margin: 1rem;
+  }
 }
 
-/* Skills Section */
 .Skills-section {
   display: flex;
 }
@@ -109,12 +134,11 @@ section {
   height: 5rem;
 }
 
-/* Projects Section */
 .projects-section {
   display: flex;
   flex-direction: column;
-  background-color: #282C34;
-  color: white;
+  /* background-color: #282C34; */
+  /* color: white; */
 }
 
 .projects-section h2 {
@@ -126,14 +150,15 @@ section {
 
 .project-card {
   display: flex;
-  padding: 2rem;
   gap: 2rem;
   justify-content: space-between;
-  background-color: white;
-  border-radius: 0.5rem;
-  color: black;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
   margin: 2rem;
+  border-bottom: 2px solid gray;
+  padding-bottom: 3rem;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .project-card .project-img {
@@ -144,40 +169,53 @@ section {
 }
 
 .project-card img {
-  width: min(30rem, 100%);
+  width: 100%;
+  height: auto;
 }
 
-.project-about {
-  width: min(50rem, 100%);
+.project-about,
+.project-img {
+  flex: 0.5 1;
   text-align: start;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-about h3 {
   font-size: 2rem;
 }
 
-/* My Info */
-.my-info {
+.project-about p {
+  width: 70%;
+}
+
+.my-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts {
   display: flex;
   align-items: center;
   gap: 1rem;
-  justify-content: center;
+  width: 15rem;
 }
 
-.my-info a {
+.contacts a {
   text-decoration: none;
   color: black;
 }
 
-/* Media Queries */
 @media only screen and (max-width: 900px) {
-  .project-card {
+
+  .project-card,
+  .project-card:nth-child(even) {
     flex-direction: column;
     align-items: center;
-  }
-
-  section {
-    padding: 1rem;
+    margin: 1rem;
   }
 
   .Education-section,
@@ -190,7 +228,6 @@ section {
   }
 }
 
-/* App Section */
 .App-section {
   display: flex;
   flex-direction: column;
@@ -211,12 +248,10 @@ section {
   width: 100%;
 }
 
-/* About Section Image */
 .About-section img {
   height: 15rem;
 }
 
-/* Education Section */
 .Education-section {
   text-align: start;
   display: flex;
@@ -230,17 +265,30 @@ section {
 }
 
 .Education-section .educations {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
 }
 
 .Education-section .educations div {
-  width: min(30rem, 100%);
+  width: 90%;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -257,7 +305,6 @@ section {
   background: #555;
 }
 
-/* Feedback Section */
 .feedback {
   display: flex;
   gap: 2rem;
@@ -296,7 +343,6 @@ section {
   text-align: start;
 }
 
-/* Media Queries for Feedback */
 @media only screen and (max-width: 1000px) {
   .App-section {
     height: fit-content;
@@ -308,20 +354,22 @@ section {
   }
 }
 
-/* Social Container */
 .social-container a {
   color: white;
 }
 
-/* Contacts and Projects Section Links */
 .Contacts-section a,
 .projects-section a {
   box-shadow: inset 0 0 0 0 #282C34;
-  color: #282C34;
+  /* color: white; */
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   text-decoration: none;
+  /* background-color: #262626; */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* margin: -2rem;?*/
 }
 
 .Contacts-section a:hover,

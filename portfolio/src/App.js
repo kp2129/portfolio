@@ -3,8 +3,19 @@ import images from './Images';
 import { IconMail } from '@tabler/icons-react';
 import { IconBrandLinkedin } from '@tabler/icons-react';
 import { IconBrandGithub } from '@tabler/icons-react';
+import { IconCaretDown } from '@tabler/icons-react';
 
 function App() {
+
+  const scrollToContacts = () => {
+    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToAbout = () => {
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+  };
+
+
   return (
     <div className="App">
 
@@ -18,12 +29,20 @@ function App() {
           <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/" target="_blank" rel="noopener noreferrer">
             <IconBrandLinkedin />
           </a>
+          <button className="contacts-button" onClick={scrollToContacts}>Contact</button>
+
+        </div>
+        <button className="scroll-button" onClick={scrollToAbout}><IconCaretDown />
+        </button>
+
+        <div>
+
         </div>
 
       </header>
 
       <main className="App-main">
-        <section className="About-section">
+        <section className="About-section" id='about'>
           <div className='about-container'>
             <img src={images.me} alt='Kristaps Polis' />
             <div className='about-me'>
@@ -38,22 +57,59 @@ function App() {
           <div>
             <h2>Skills</h2>
           </div>
-          <div className='skills-container'>
-            <img src={images.reactLogo} alt="React logo" />
-            <img src={images.laravelLogo} alt="Laravel logo" />
-            <img src={images.viteLogo} alt="Vite logo" />
-            <img src={images.tailwindLogo} alt="Tailwind logo" />
-            <img src={images.phpLogo} alt="PHP logo" />
-            <img src={images.mysqlLogo} alt="MYSQL logo" />
-            <img src={images.jsLogo} alt="JS logo" />
-            <img src={images.jqueryLogo} alt="JQuery logo" />
-            <img src={images.inertiaLogo} alt="Inertia logo" />
-            <img src={images.htmlLogo} alt="HTML logo" />
-            <img src={images.firebaseLogo} alt="Firebase logo" />
-            <img src={images.filamentLogo} alt="Filamnet logo" />
-            <img src={images.cssLogo} alt="Css logo" />
-
-
+          <div className="skills-container">
+            <div className="image-container">
+              <img src={images.reactLogo} alt="React logo" />
+              <div className="overlay">React</div>
+            </div>
+            <div className="image-container">
+              <img src={images.laravelLogo} alt="Laravel logo" />
+              <div className="overlay">Laravel</div>
+            </div>
+            <div className="image-container">
+              <img src={images.viteLogo} alt="Vite logo" />
+              <div className="overlay">Vite</div>
+            </div>
+            <div className="image-container">
+              <img src={images.tailwindLogo} alt="Tailwind logo" />
+              <div className="overlay">Tailwind</div>
+            </div>
+            <div className="image-container">
+              <img src={images.phpLogo} alt="PHP logo" />
+              <div className="overlay">PHP</div>
+            </div>
+            <div className="image-container">
+              <img src={images.mysqlLogo} alt="MySQL logo" />
+              <div className="overlay">MySQL</div>
+            </div>
+            <div className="image-container">
+              <img src={images.jsLogo} alt="JS logo" />
+              <div className="overlay">JavaScript</div>
+            </div>
+            <div className="image-container">
+              <img src={images.jqueryLogo} alt="JQuery logo" />
+              <div className="overlay">jQuery</div>
+            </div>
+            <div className="image-container">
+              <img src={images.inertiaLogo} alt="Inertia logo" />
+              <div className="overlay">Inertia</div>
+            </div>
+            <div className="image-container">
+              <img src={images.htmlLogo} alt="HTML logo" />
+              <div className="overlay">HTML</div>
+            </div>
+            <div className="image-container">
+              <img src={images.firebaseLogo} alt="Firebase logo" />
+              <div className="overlay">Firebase</div>
+            </div>
+            <div className="image-container">
+              <img src={images.filamentLogo} alt="Filament logo" />
+              <div className="overlay">Filament</div>
+            </div>
+            <div className="image-container">
+              <img src={images.cssLogo} alt="CSS logo" />
+              <div className="overlay">CSS</div>
+            </div>
           </div>
         </section>
 
@@ -173,26 +229,28 @@ function App() {
           </div>
         </section>
 
-        <section className="Contacts-section">
+        <section className="Contacts-section" id='contacts'>
           <h2>Contacts</h2>
+          <div className='my-contacts'>
 
-          <div className='my-info'>
-            <IconMail />
-            <p><a href="mailto:kristapspolis0@gmail.com">kristapspolis0@gmail.com</a></p>
-          </div>
-          <div className='my-info'>
-            <IconBrandLinkedin />
-            <p> <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/"> Kristaps Polis</a></p>
-          </div>
-          <div className='my-info'>
-            <IconBrandGithub />
-            <p> <a href="https://github.com/kp2129">KP2129</a></p>
+            <div className='contacts'>
+              <IconMail />
+              <p><a href="mailto:kristapspolis0@gmail.com">kristapspolis0@gmail.com</a></p>
+            </div>
+            <div className='contacts'>
+              <IconBrandLinkedin />
+              <p> <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/"> Kristaps Polis</a></p>
+            </div>
+            <div className='contacts'>
+              <IconBrandGithub />
+              <p> <a href="https://github.com/kp2129">KP2129</a></p>
+            </div>
           </div>
 
         </section>
       </main>
 
-      
+
     </div>
   );
 }

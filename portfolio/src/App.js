@@ -19,7 +19,7 @@ function App() {
           <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/" target="_blank" rel="noopener noreferrer">
             <IconBrandLinkedin />
           </a>
-          <a href={require('./files/KristapsPolis_CV.pdf')} download="Kristaps_Polis_CV.pdf">
+          <a href={require('./files/Kristaps_Polis_CV')} download="Kristaps_Polis_CV.pdf">
             <IconFile />
           </a>
         </div>
@@ -190,7 +190,7 @@ function App() {
           </div>
           <div className='my-info'>
             <IconFile />
-            <p> <a href={require('./files/KristapsPolis_CV.pdf')} download="Kristaps_Polis_CV.pdf">
+            <p> <a href={require('./files/Kristaps_Polis_CV')} download="Kristaps_Polis_CV.pdf">
               Download CV
             </a></p>
           </div>

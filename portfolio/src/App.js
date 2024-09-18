@@ -184,7 +184,10 @@ function App() {
             <IconBrandLinkedin />
             <p> <a href="https://www.linkedin.com/in/kristaps-polis-10064a299/"> Kristaps Polis</a></p>
           </div>
-          
+          <div className='my-info'>
+            <IconBrandGithub />
+            <p> <a href="https://github.com/kp2129">KP2129</a></p>
+          </div>
 
         </section>
       </main>

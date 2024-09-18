@@ -7,10 +7,6 @@ import { IconCaretDown } from '@tabler/icons-react';
 
 function App() {
 
-  const scrollToContacts = () => {
-    document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' });
-  };
-
   const scrollToAbout = () => {
     document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
   };
@@ -32,8 +28,6 @@ function App() {
           <button className="contacts-button" onClick={scrollToContacts}>Contact</button>
 
         </div>
-        <button className="scroll-button" onClick={scrollToAbout}><IconCaretDown />
-        </button>
 
         <div>
 

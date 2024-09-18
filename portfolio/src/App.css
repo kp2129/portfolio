@@ -286,7 +286,7 @@ body,
 }
 
 .Education-section .educations div {
-  width: 90%;
+  width: min(30rem, 90%);
 }
 
 ::-webkit-scrollbar {

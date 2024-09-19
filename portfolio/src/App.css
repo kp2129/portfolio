@@ -367,7 +367,7 @@ body,
   color: black;
   border-radius: 0.5rem;
   flex-direction: column;
-  padding: 15rem;
+  min-height: 15rem;
 }
 
 .feedback-section {
@@ -376,8 +376,10 @@ body,
 }
 
 .feedback-text {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0rem 1rem 1rem 1rem;
   text-align: start;
+  border-top: 2px solid slategray;
+
 }
 
 .feedback-title {
@@ -390,8 +392,34 @@ body,
 
 .feedback-name {
   width: 100%;
-  padding: 1rem 0 0 1rem;
+  padding: 1rem;
   text-align: start;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #262626;
+  }
+
+  .perosons-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    /* top: 1rem; */
+    display: flex;
+    align-items: start;
+    border-radius: 100%;
+    /* justify-content: start; */
+    object-position: top;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -402,6 +430,7 @@ body,
 
   .feedback {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

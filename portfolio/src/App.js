@@ -224,11 +224,31 @@ function App() {
           </div>
           <div className='feedback'>
             <div className='feedback-box'>
-              <div className='feedback-name'><p>Jēkabs Krīgerts</p></div>
+              <div className='feedback-name'>
+                <div className='perosons-info'>
+                  <img src='https://i0.wp.com/majascesis.lv/wp-content/uploads/2024/02/skolotajs-jekabs-edited.jpeg?resize=479%2C852&ssl=1' />
+                  <div>
+                    <a href='https://www.linkedin.com/in/jekabs-krigerts/'><p>Jēkabs Krīgerts</p></a>
+                    <div>
+                      19/09/2024
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
             </div>
             <div className='feedback-box'>
-              <div className='feedback-name'><p>Andris Lapsiņš</p></div>
+              <div className='feedback-name'>
+                <div className='perosons-info'>
+                  <img src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png' />
+                  <div>
+                    <a href='https://www.linkedin.com/in/jekabs-krigerts/'><p>Andris Lapsiņš</p></a>
+                    <div>
+                      19/09/2024
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
             </div>
           </div>

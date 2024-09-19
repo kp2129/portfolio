@@ -367,6 +367,7 @@ body,
   color: black;
   border-radius: 0.5rem;
   flex-direction: column;
+  padding: 15rem;
 }
 
 .feedback-section {

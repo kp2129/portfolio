@@ -225,11 +225,11 @@ function App() {
           <div className='feedback'>
             <div className='feedback-box'>
               <div className='feedback-name'><p>Jēkabs Krīgerts</p></div>
-              <div className='feedback-text'><p>Comming soon...</p></div>
+              <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
             </div>
             <div className='feedback-box'>
               <div className='feedback-name'><p>Andris Lapsiņš</p></div>
-              <div className='feedback-text'><p>Comming soon...</p></div>
+              <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
             </div>
           </div>
         </section>

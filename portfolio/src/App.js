@@ -235,7 +235,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
+              <div className='feedback-text'><p>I am still waiting for them to leave me a feedback...</p></div>
             </div>
             <div className='feedback-box'>
               <div className='feedback-name'>
@@ -249,7 +249,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='feedback-text'><p>I am still waiting for them to leave me a review...</p></div>
+              <div className='feedback-text'><p>I am still waiting for them to leave me a feedback...</p></div>
             </div>
           </div>
         </section>

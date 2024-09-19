@@ -225,17 +225,11 @@ function App() {
           <div className='feedback'>
             <div className='feedback-box'>
               <div className='feedback-name'><p>Jēkabs Krīgerts</p></div>
-              <div className='feedback-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus risus, sodales vel consequat non, gravida id sapien. Quisque blandit, libero eget tincidunt sollicitudin, nibh sapien volutpat leo, eget tempor metus nunc et purus. Morbi sapien lacus, vehicula ut dui quis, malesuada suscipit est. Praesent fringilla
-                aliquam ullamcorper.  Quisque non ipsum non tellus malesuada sodales. Aliquam faucibus, arcu ut </p></div>
+              <div className='feedback-text'><p>Comming soon...</p></div>
             </div>
             <div className='feedback-box'>
-              <div className='feedback-name'><p>Jēkabs Krīgerts</p></div>
-              <div className='feedback-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus risus, sodales vel consequat non, gravida id sapien. Quisque blandit, libero eget tincidunt sollicitudin, nibh sapien volutpat leo, eget tempor metus nunc et purus. Morbi sapien lacus, vehicula ut dui quis, malesuada suscipit est. Praesent fringilla
-                aliquam ullamcorper. Quisque non ipsum non tellus malesuada sodales. Aliquam faucibus, arcu ut </p></div>
-            </div><div className='feedback-box'>
-              <div className='feedback-name'><p>Jēkabs Krīgerts</p></div>
-              <div className='feedback-text'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus risus, sodales vel consequat non, gravida id sapien. Quisque blandit, libero eget tincidunt sollicitudin, nibh sapien volutpat leo, eget tempor metus nunc et purus. Morbi sapien lacus, vehicula ut dui quis, malesuada suscipit est. Praesent fringilla
-                aliquam ullamcorper. Quisque non ipsum non tellus malesuada sodales. Aliquam faucibus, arcu ut </p></div>
+              <div className='feedback-name'><p>Andris Lapsiņš</p></div>
+              <div className='feedback-text'><p>Comming soon...</p></div>
             </div>
           </div>
         </section>

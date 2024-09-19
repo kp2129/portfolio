@@ -235,7 +235,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='feedback-text'><p>I am still waiting for them to leave me a feedback...</p></div>
+              <div className='feedback-text'><p>Kristaps is a highly supportive person with great empathy. He not only manages his own work efficiently but has also demonstrated the ability to lead his classmates in challenging situations. He consistently completes tasks with precision and on time, which has enabled him to develop a strong knowledge base and skill set in React and Laravel.</p></div>
             </div>
             <div className='feedback-box'>
               <div className='feedback-name'>

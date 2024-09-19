@@ -183,6 +183,9 @@ function App() {
               <div className='project-about'>
                 <h3>News Website</h3>
                 <p>The News website project was a team experience where we worked together to create our vision of how a modern news platform should look. We aimed for a clean, user-friendly design that puts content at the forefront while ensuring easy navigation. It was a collaborative effort where we combined creativity with practicality to shape what we believe a news website should be</p>
+                <div>
+                  <a href='https://github.com/kp2129/news'>Look at the code!</a>
+                </div>
               </div>
             </div>
 
@@ -193,6 +196,9 @@ function App() {
               <div className='project-about'>
                 <h3>Jira Replacement</h3>
                 <p>Todomist was an ambitious project where, as a team, we set out to create a Jira alternative for task and issue tracking within a short time frame. Our goal was to build a simple yet effective tool that streamlines project management and helps teams stay organized.</p>
+                <div>
+                  <a href='https://github.com/kp2129/todomist'>Look at the code!</a>
+                </div>
               </div>
             </div>
 
@@ -203,6 +209,9 @@ function App() {
               <div className='project-about'>
                 <h3>Online Car Shop</h3>
                 <p>Autoscam was my first team project, and it was an eye-opening experience. It showed me just how efficient work can be when you're part of a great team. The collaboration, communication, and shared vision we had made the project flow smoothly and helped us overcome challenges quickly. It was an excellent example of how a team with the right skills and mindset can achieve much more together than as individuals</p>
+                <div>
+                  <a href='https://github.com/TotoalNormie/autoscam'>Look at the code!</a>
+                </div>
               </div>
             </div>
           </div>

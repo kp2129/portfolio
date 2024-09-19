@@ -39,10 +39,17 @@ function App() {
       <main className="App-main">
         <section className="About-section" id='about'>
           <div className='about-container'>
-            <img src={images.me} alt='Kristaps Polis' />
+
             <div className='about-me'>
-              <h2>About me</h2>
-              <p>I am a web developer with a solid foundation in both front-end and back-end technologies. I have been programming for 4 years and have expertise in Laravel and React, allowing me to create functional solutions on both the server and client sides. I began my programming journey with PHP, HTML, JavaScript, MySQL, and CSS. I also use Tailwind CSS and Bootstrap to design modern and aesthetically pleasing websites.</p>
+              <div>
+                <h2>About me</h2>
+              </div>
+              <div className='text-about'>
+
+                <img src={images.me} alt='Kristaps Polis' />
+                <p>I am a web developer with a solid foundation in both front-end and back-end technologies. I have been programming for 4 years and have expertise in Laravel and React, allowing me to create functional solutions on both the server and client sides. I began my programming journey with PHP, HTML, JavaScript, MySQL, and CSS. I also use Tailwind CSS and Bootstrap to design modern and aesthetically pleasing websites.</p>
+
+              </div>
 
             </div>
           </div>

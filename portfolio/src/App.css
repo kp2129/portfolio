@@ -368,6 +368,7 @@ body,
   border-radius: 0.5rem;
   flex-direction: column;
   min-height: 15rem;
+  width:min(30rem, 100%);
 }
 
 .feedback-section {

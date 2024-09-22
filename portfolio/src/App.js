@@ -244,12 +244,12 @@ function App() {
                   <div>
                     <a href='https://www.linkedin.com/in/jekabs-krigerts/'><p>Andris Lapsiņš</p></a>
                     <div>
-                      19/09/2024
+                      21/09/2024
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='feedback-text'><p>I am still waiting for them to leave me a feedback...</p></div>
+              <div className='feedback-text'><p>Kristaps is a talented and motivated student who quickly learned programming skills and was able to independently solve complex tasks. He is responsible, works precisely and cooperates effectively in a team.</p></div>
             </div>
           </div>
         </section>
